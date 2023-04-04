@@ -1,19 +1,19 @@
 Prueba tecnica: Mayerly Enriquez.
 
 ============
-Instalacion
+Instalación
 ============ 
-Se debe instalar el modulo "prueba_bi" el cual tiene como dependencia 2 modulos, crm y projects, los cuales se instalaran automaticamente al
-instalar el modulo.
+Se debe instalar el módulo "prueba_bia" el cual tiene como dependencia 2 módulos, crm y projects, los cuales se instalaran automaticamente al
+instalar el módulo.
 
-Cuando se instalen estaran disponibles las opciones se lo realizado a continuacion 
+Cuando se instalen estaran disponibles las siguientes opciones: 
 
 ============
 En project.task
 ============
 
-1. Se realiza una herencia al modelo project.task, donde se agrega un nuevo campo llamado service_id, en este campo service id se almacenara
-la informacion que retorne el endpoint creado, como no se me proporciono un endpoint cree uno en un sitio web el cual siempre retorna
+1. Se realiza una herencia al modelo project.task, donde se agrega un nuevo campo llamado service_id, en este campo service id se almacenará
+la información que retorne el endpoint creado, como no se me proporciono un endpoint cree uno en un sitio web el cual siempre retorna
 un json con el id del servicio.
 
 Se realiza en el mismo modelo una herencia a project.task, donde al guardar cualquier tarea se ejecuta el endpoint y se asigna el service id al 
