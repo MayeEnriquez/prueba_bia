@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record model="ir.ui.view" id="crm_lead_inherit">
+        <field name="name">crm.lead</field>
+        <field name="model">crm.lead</field>
+        <field name="inherit_id" ref="crm.crm_lead_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//page[@name='lead']" position="after">
+                <page string="Tareas relacionadas" name="related_task">
+                    <group>
+                        <field name="task_ids" nolabel="1">
+                            <tree>
+                                <field name="name" />
+                                <field name="service_id" />
+                                <button
+                                    name="get_service_task" string="Obtener Servicio ID"
+                                    type="object"
+                                    class="oe_highlight"
+                                />
+                            </tree>
+                        </field>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>
